@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    padding: 1rem;
+    background-color: #768ff1;
+}
+
+.form-container{
+    min-height: 100vh;
+    min-width: 90vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div{
+    min-width: 50%;
+}
+
+.right-div{
+    min-width: 50%;
+}
+
+.header{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.left-div> img{
+    min-height: 500px;
+    width: 450px;
+}
+
+/* Form-section */
+
+.form{
+    padding: 10px 6px;
+}
+
+.form-control{
+    margin-bottom: 25px;
+}
+
+.form-control input{
+    border: 2px solid #CBD2CA;
+    border-radius: 13px;
+    padding: 7px 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control input:focus{
+    outline: 0;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+button{
+    font-size: 15px;
+    padding: 0.5rem 0.8rem;
+    background-color: #2E81C1;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+
+button:hover{
+    background-color: #12629f;
+    transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 850px){
+    body{
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form-container{
+        flex-direction: column;
+    }
+    .right-div{
+        width: 480px;
+        margin-left: 100px;
+    }
+    button{
+        margin-left: 150px;
+    }
+}
+
+/* success page */
+
+.body{
+    background-color: #96CAF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.message{
+    color: #440DF4;
+    font-size: 50px;
+}
+
+
